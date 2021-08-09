@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="اختر العملة الأساسية"
+        android:layout_marginTop="25dp"
+        />
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+    >
+        <RadioButton
+            android:onClick="r1"
+            android:id="@+id/tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تركي"
+            android:textSize="24sp"
+            />
+        <RadioButton
+            android:id="@+id/dr"
+            android:onClick="r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دولار"
+            android:textSize="24sp"
+            />
+            </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/ed2"
+        android:background="#ccaadd"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="سعر التصريف"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textColorHint="#333333"
+        android:gravity="center"
+        />
+<EditText
+    android:id="@+id/ed1"
+    android:inputType="numberDecimal"
+    android:background="#cceedd"
+    android:layout_marginBottom="25dp"
+    android:layout_width="300dp"
+    android:layout_height="60dp"
+    android:textSize="24sp"
+    android:textColor="#000000"
+    android:textColorHint="#333333"
+    android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/tv1"
+        android:background="#bbccdd"
+        android:layout_marginBottom="25dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OK"
+        android:textSize="24sp"
+        android:onClick="b1"
+
+        />
+    <ProgressBar
+        android:id="@+id/P1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+
+        />
+
+</LinearLayout>
